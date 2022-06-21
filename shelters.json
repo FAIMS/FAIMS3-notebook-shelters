@@ -111,7 +111,7 @@
     },
     {
         "is_attachment": false,
-        "metadata": "Adela Sobotkova, Rosanna Farb�l",
+        "metadata": "Adela Sobotkova, Rosanna Farbïŋ―l",
         "_id": "project-metadata-project_lead",
         "_rev": "16-e2808dcf7aaf7bcd04c9f6f2ccbbb311"
     },
@@ -183,7 +183,7 @@
             "isrequest": true,
             "behavious":
             {},
-            "project_lead": "Adela Sobotkova, Rosanna Farb�l",
+            "project_lead": "Adela Sobotkova, Rosanna Farbïŋ―l",
             "lead_institution": "Aarhus University",
             "pre_description": "This notebooks supports the documentation of the current condition, access, and location of Cold War and earlier civil defenses in Aarhus municipality",
             "filenames":
@@ -221,7 +221,7 @@
                 "component-parameters":
                 {
                     "fullWidth": true,
-                    "helperText": "If your feature is a shelter, then please select an appropriate type (as best as you can surmise from the visible remains) . If the feature is something else (depo, or other), select Other and describe in the Annotation, please. Shelter types refer to the plan of the shelter below ground. Indicate which is the likely type if you can make it out during the visit. Use the certainty slider in case of uncertainty! <p> <b>Type I</b>, som er et kuppelformet rum med en v�gtykkelse p� 25 cm. Beton. Rummet er st�bt over en forskalling, og der er plads til 50 personer i rummet. <b>Type II</b>, som er et hesteskoformet r�r st�bt over en forskalling, ligeledes med plads til 50 personer og en v�gtykkelse p� 25 cm. Beton. <b>Type III</b>, ogs� kaldet �rhus modellen, som er et r�rformet rum lavet af f�rdigst�bte betonelementer med en v�gtykkelse p� 15 cm. Beton. Der er ogs� plads til 50 personer. Denne type blev fremstillet af firmaet A/S H�jgaard & Schultz og er kun blevet bygget i �rhus. <b>Type IV<-b>, er et kuppelformet rum st�bt over en forskalling og med en v�gtykkelse p� 25 cm. Beton. Der er plads til 50 personer pr. rum.  <b>Type V<-b>, er et cylinderformet rum st�bt over en forskalling og med en v�gtykkelse p� 30 cm. Beton. Der er ligeledes plads til 50 personer pr. rum.  <b>Type VI</b>, er et kasseformet rum st�bt over en forskalling og med en v�gtykkelse p� 40 cm. Beton, med plads til 50 personer</p>",
+                    "helperText": "If your feature is a shelter, then please select an appropriate type (as best as you can surmise from the visible remains) . If the feature is something else (depo, or other), select Other and describe in the Annotation, please. Shelter types refer to the plan of the shelter below ground. Indicate which is the likely type if you can make it out during the visit. Use the certainty slider in case of uncertainty! <p> <b>Type I</b>, som er et kuppelformet rum med en vïŋ―gtykkelse pïŋ― 25 cm. Beton. Rummet er stïŋ―bt over en forskalling, og der er plads til 50 personer i rummet. <b>Type II</b>, som er et hesteskoformet rïŋ―r stïŋ―bt over en forskalling, ligeledes med plads til 50 personer og en vïŋ―gtykkelse pïŋ― 25 cm. Beton. <b>Type III</b>, ogsïŋ― kaldet ïŋ―rhus modellen, som er et rïŋ―rformet rum lavet af fïŋ―rdigstïŋ―bte betonelementer med en vïŋ―gtykkelse pïŋ― 15 cm. Beton. Der er ogsïŋ― plads til 50 personer. Denne type blev fremstillet af firmaet A/S Hïŋ―jgaard & Schultz og er kun blevet bygget i ïŋ―rhus. <b>Type IV<-b>, er et kuppelformet rum stïŋ―bt over en forskalling og med en vïŋ―gtykkelse pïŋ― 25 cm. Beton. Der er plads til 50 personer pr. rum.  <b>Type V<-b>, er et cylinderformet rum stïŋ―bt over en forskalling og med en vïŋ―gtykkelse pïŋ― 30 cm. Beton. Der er ligeledes plads til 50 personer pr. rum.  <b>Type VI</b>, er et kasseformet rum stïŋ―bt over en forskalling og med en vïŋ―gtykkelse pïŋ― 40 cm. Beton, med plads til 50 personer</p>",
                     "variant": "outlined",
                     "required": true,
                     "select": true,
@@ -454,7 +454,7 @@
                 "component-parameters":
                 {
                     "fullWidth": true,
-                    "helperText": "This attribute is relevant only to shelters and is not mandatory.If your feature is a shelter, please indicate what subtype it is a part of. Shelter subtype is indicated by letters, such as A,B,C,D,.. and refer to the number of times the original shelter design is repeated in one location. Disse grundtyper kunne udbygges i grupper � 2-3 helt op til 5 rum, s� der p� den m�de kunne v�re plads til helt op til 250 personer i d�kningsgravene. Systemet var bygget s�dan, at der var en hovedtype og en model, for eksempel type IIB. Der er s�ledes i alt 17 forskellige udgaver af betond�kningsgrave.",
+                    "helperText": "This attribute is relevant only to shelters and is not mandatory.If your feature is a shelter, please indicate what subtype it is a part of. Shelter subtype is indicated by letters, such as A,B,C,D,.. and refer to the number of times the original shelter design is repeated in one location. Disse grundtyper kunne udbygges i grupper ïŋ― 2-3 helt op til 5 rum, sïŋ― der pïŋ― den mïŋ―de kunne vïŋ―re plads til helt op til 250 personer i dïŋ―kningsgravene. Systemet var bygget sïŋ―dan, at der var en hovedtype og en model, for eksempel type IIB. Der er sïŋ―ledes i alt 17 forskellige udgaver af betondïŋ―kningsgrave.",
                     "variant": "outlined",
                     "required": false,
                     "select": true,
