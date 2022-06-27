@@ -113,7 +113,7 @@
         "is_attachment": false,
         "metadata": "Adela Sobotkova, Rosanna Farbøl",
         "_id": "project-metadata-project_lead",
-        "_rev": "3-e70a69775ef10b4ea8d995acf6a9968f"
+        "_rev": "3-1922791667b42f024b6feea21e920325"
     },
     {
         "is_attachment": false,
@@ -190,7 +190,7 @@
             []
         },
         "_id": "project-metadata-projectvalue",
-        "_rev": "3-51eba5c59cfdbe2728269013099fad58"
+        "_rev": "3-b56b5f81733f90e7cb5cd91882a57a27"
     },
     {
         "is_attachment": false,
@@ -1623,11 +1623,11 @@
                 "component-parameters":
                 {
                     "fullWidth": true,
-                    "helperText": "A number of different civil defence features can be found around Aarhus, from emergency hospital, watch posts to civilian shelters of different design. This form is designed primarily for shelters. If a feature is a shelter, then please select an appropriate type as best as you can surmise from the remains visible on the surface. If the feature is something else (depo, or other), select Other and describe in the Annotation, please. ",
+                    "helperText": "",
                     "variant": "outlined",
-                    "label": "Civil Defence Features",
+                    "label": "",
                     "variant_style": "h2",
-                    "html_tag": "",
+                    "html_tag": "<h2>Civil Defence Features</h2><p>A number of different civil defence features can be found around Aarhus, from emergency hospital, watch posts to civilian shelters of different design. This form is designed primarily for shelters. If a feature is a shelter, then please select an appropriate type as best as you can surmise from the remains visible on the surface. If the feature is something else (depo, or other), select Other and describe in the Annotation, please. </p><div><img style=\"width:100%\" src=\"https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-1.jpg\"/></div>",
                     "id": "newfield20c81386",
                     "name": "newfield20c81386"
                 },
@@ -1965,6 +1965,121 @@
                         "label": "uncertainty"
                     }
                 }
+            },
+            "newfield0df58223":
+            {
+                "component-namespace": "faims-custom",
+                "component-name": "RandomStyle",
+                "type-returned": "faims-core::String",
+                "component-parameters":
+                {
+                    "fullWidth": true,
+                    "helperText": "",
+                    "variant": "outlined",
+                    "label": "",
+                    "html_tag": "<h2>Type/Subtype Illustration</h2><div><img style=\"width:100%\" src=\"https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-2_final.jpg\"/></div>",
+                    "id": "newfield0df58223",
+                    "name": "newfield0df58223"
+                },
+                "validationSchema":
+                [
+                    [
+                        "yup.string"
+                    ]
+                ],
+                "initialValue": "",
+                "access":
+                [
+                    "admin"
+                ],
+                "meta":
+                {
+                    "annotation_label": "annotation",
+                    "annotation": true,
+                    "uncertainty":
+                    {
+                        "include": true,
+                        "label": "uncertainty"
+                    }
+                }
+            },
+            "newfield96ddfc29":
+            {
+                "component-namespace": "faims-custom",
+                "component-name": "TakePoint",
+                "type-returned": "faims-pos::Location",
+                "component-parameters":
+                {
+                    "fullWidth": true,
+                    "name": "newfield96ddfc29",
+                    "id": "newfield96ddfc29",
+                    "helperText": "Click to save current location",
+                    "variant": "outlined",
+                    "label": "Take point"
+                },
+                "validationSchema":
+                [
+                    [
+                        "yup.object"
+                    ],
+                    [
+                        "yup.nullable"
+                    ]
+                ],
+                "initialValue": null,
+                "access":
+                [
+                    "admin"
+                ],
+                "meta":
+                {
+                    "annotation_label": "annotation",
+                    "annotation": true,
+                    "uncertainty":
+                    {
+                        "include": true,
+                        "label": "uncertainty"
+                    }
+                }
+            },
+            "newfield4c30dcff":
+            {
+                "component-namespace": "faims-custom",
+                "component-name": "TakePoint",
+                "type-returned": "faims-pos::Location",
+                "component-parameters":
+                {
+                    "fullWidth": true,
+                    "name": "newfield4c30dcff",
+                    "id": "newfield4c30dcff",
+                    "helperText": "Click to save current location",
+                    "variant": "outlined",
+                    "label": "Emergency Exit GPS Point"
+                },
+                "validationSchema":
+                [
+                    [
+                        "yup.object"
+                    ],
+                    [
+                        "yup.nullable"
+                    ]
+                ],
+                "initialValue": null,
+                "access":
+                [
+                    "admin"
+                ],
+                "meta":
+                {
+                    "annotation_label": "annotation",
+                    "annotation": true,
+                    "uncertainty":
+                    {
+                        "include": true,
+                        "label": "uncertainty"
+                    }
+                }
             }
         },
         "fviews":
@@ -1978,13 +2093,15 @@
                     "hridFORM1",
                     "newfieldc2a82721",
                     "newfieldbecf0b36",
+                    "newfield0df58223",
                     "newfielda7049f6e",
                     "newfield89dda018",
                     "newfieldfc1bcefa",
                     "newfieldb99a2c02",
                     "newfielde350da06",
                     "newfield4f5f1028",
-                    "newfieldc5fb419b"
+                    "newfieldc5fb419b",
+                    "newfield96ddfc29"
                 ],
                 "uidesign": "form",
                 "label": "General"
@@ -2005,6 +2122,7 @@
                     "newfieldaca62901",
                     "newfield6407e68f",
                     "newfield0452bda3",
+                    "newfield4c30dcff",
                     "newfield57c628b9",
                     "newfield9f1d67e1",
                     "newfield0358058e",
@@ -2033,6 +2151,6 @@
             "FORM1"
         ],
         "_id": "ui-specification",
-        "_rev": "3-b46f0d96f3cda81baec0769bd37d521f"
+        "_rev": "3-1facb5c81bf84460315ca2fbc4ec2801"
     }
 ]
