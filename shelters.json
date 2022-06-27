@@ -9,7 +9,7 @@
             }
         ],
         "_id": "local-autoincrementers",
-        "_rev": "3-0a05d8dec7c7c54f0d9eb34ff2bfab4a"
+        "_rev": "3-caf92b6fcd80f97448e1c340b9d9d813"
     },
     {
         "is_attachment": false,
@@ -35,7 +35,7 @@
             ]
         },
         "_id": "project-metadata-access",
-        "_rev": "3-7eeca344289c82ba6f23408f73009289"
+        "_rev": "3-6a7715d071ed9f396a0647bad5f2459a"
     },
     {
         "is_attachment": false,
@@ -46,21 +46,21 @@
             "team"
         ],
         "_id": "project-metadata-accesses",
-        "_rev": "3-7f1d3c80499ccbf017d4a888ca6ff4c2"
+        "_rev": "3-300f24ddf1332f2dc0f6f4f60ba9ac44"
     },
     {
         "is_attachment": false,
         "metadata":
         {},
         "_id": "project-metadata-behavious",
-        "_rev": "3-deeadb776e390788d5996b19ea0f7852"
+        "_rev": "3-4f06ff30ad227926278be362b9a903ba"
     },
     {
         "is_attachment": false,
         "metadata":
         [],
         "_id": "project-metadata-filenames",
-        "_rev": "3-603af4103e4fc72bb4ea245e7c8b38d6"
+        "_rev": "3-32ea7864fd8f057c860fcd5144be9142"
     },
     {
         "is_attachment": false,
@@ -76,50 +76,50 @@
             }
         },
         "_id": "project-metadata-forms",
-        "_rev": "3-e92311ca57404ada13eba07175a3481f"
+        "_rev": "3-118bff0fe158c291bd8a55bb76f7415c"
     },
     {
         "is_attachment": false,
         "metadata": false,
         "_id": "project-metadata-ispublic",
-        "_rev": "3-731e5dfa5916b3b8d29ee3ae8a92d39f"
+        "_rev": "3-e2f66d3a2b85b71d432488adad341ba1"
     },
     {
         "is_attachment": false,
         "metadata": true,
         "_id": "project-metadata-isrequest",
-        "_rev": "3-27216f5b862eebb51727b1d4d69d74d9"
+        "_rev": "3-64c85566ac5d7817677646269912d110"
     },
     {
         "is_attachment": false,
         "metadata": "Aarhus University",
         "_id": "project-metadata-lead_institution",
-        "_rev": "3-aba175931ac789b6d6b50cc2824de207"
+        "_rev": "3-14a5f74c11fdf67e076c6c82dd878ab8"
     },
     {
         "is_attachment": false,
         "metadata":
         {},
         "_id": "project-metadata-meta",
-        "_rev": "3-bdd515254099e8636c8aaf0aa81a9429"
+        "_rev": "3-f061ea60be26bc6fbd96b6127d178fd6"
     },
     {
         "is_attachment": false,
         "metadata": "This notebooks supports the documentation of the current condition, access, and location of Cold War and earlier civil defenses in Aarhus municipality",
         "_id": "project-metadata-pre_description",
-        "_rev": "3-20921829e25bde416650f268e30c9901"
+        "_rev": "3-0242264065f46f152419ce087334308f"
     },
     {
         "is_attachment": false,
         "metadata": "Adela Sobotkova, Rosanna Farbøl",
         "_id": "project-metadata-project_lead",
-        "_rev": "3-1922791667b42f024b6feea21e920325"
+        "_rev": "3-ebcc59237d6be61eabbaf8508ed59f23"
     },
     {
         "is_attachment": false,
         "metadata": "New",
         "_id": "project-metadata-project_status",
-        "_rev": "3-8b45a0c4c0a3727194a0ab577363c052"
+        "_rev": "3-02ccde79fc0c20bceb72b9e6b8bfdac3"
     },
     {
         "is_attachment": false,
@@ -190,7 +190,7 @@
             []
         },
         "_id": "project-metadata-projectvalue",
-        "_rev": "3-b56b5f81733f90e7cb5cd91882a57a27"
+        "_rev": "3-d36ccd41e8d48a7fd4e0b7ca06ec8010"
     },
     {
         "is_attachment": false,
@@ -208,7 +208,7 @@
             }
         },
         "_id": "project-metadata-sections",
-        "_rev": "3-2bc42e8f953111c3d6119143c9d0b5b1"
+        "_rev": "3-8a62e220fee3fb4e1791d61a1d4514f2"
     },
     {
         "fields":
@@ -1314,7 +1314,9 @@
                     "variant": "outlined",
                     "required": false,
                     "InputProps":
-                    {},
+                    {
+                        "type": "number"
+                    },
                     "SelectProps":
                     {},
                     "InputLabelProps":
@@ -1330,10 +1332,6 @@
                 [
                     [
                         "yup.number"
-                    ],
-                    [
-                        "yup.min",
-                        0
                     ]
                 ],
                 "initialValue": "",
@@ -2100,8 +2098,7 @@
                     "newfieldb99a2c02",
                     "newfielde350da06",
                     "newfield4f5f1028",
-                    "newfieldc5fb419b",
-                    "newfield96ddfc29"
+                    "newfieldc5fb419b"
                 ],
                 "uidesign": "form",
                 "label": "General"
@@ -2151,6 +2148,6 @@
             "FORM1"
         ],
         "_id": "ui-specification",
-        "_rev": "3-1facb5c81bf84460315ca2fbc4ec2801"
+        "_rev": "3-080475e1c0427803a87c236ddde0d792"
     }
 ]
