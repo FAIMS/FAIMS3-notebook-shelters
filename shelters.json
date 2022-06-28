@@ -9,7 +9,7 @@
             }
         ],
         "_id": "local-autoincrementers",
-        "_rev": "3-caf92b6fcd80f97448e1c340b9d9d813"
+        "_rev": "6-c376a034e45ee39f34b27409c8a999ab"
     },
     {
         "is_attachment": false,
@@ -35,7 +35,7 @@
             ]
         },
         "_id": "project-metadata-access",
-        "_rev": "3-6a7715d071ed9f396a0647bad5f2459a"
+        "_rev": "5-4d837481fb38029402bee8f2eeb8e0e2"
     },
     {
         "is_attachment": false,
@@ -46,21 +46,21 @@
             "team"
         ],
         "_id": "project-metadata-accesses",
-        "_rev": "3-300f24ddf1332f2dc0f6f4f60ba9ac44"
+        "_rev": "6-bdc6ffd71e22be548075a8c241d5a804"
     },
     {
         "is_attachment": false,
         "metadata":
         {},
         "_id": "project-metadata-behavious",
-        "_rev": "3-4f06ff30ad227926278be362b9a903ba"
+        "_rev": "5-50e7228a82caa696ab6b9832f168c7e7"
     },
     {
         "is_attachment": false,
         "metadata":
         [],
         "_id": "project-metadata-filenames",
-        "_rev": "3-32ea7864fd8f057c860fcd5144be9142"
+        "_rev": "5-6b51778e640d6b7097497ac0e244b9ca"
     },
     {
         "is_attachment": false,
@@ -76,50 +76,50 @@
             }
         },
         "_id": "project-metadata-forms",
-        "_rev": "3-118bff0fe158c291bd8a55bb76f7415c"
+        "_rev": "6-afb8a99b5ebf7e69c7b1824c49e01167"
     },
     {
         "is_attachment": false,
         "metadata": false,
         "_id": "project-metadata-ispublic",
-        "_rev": "3-e2f66d3a2b85b71d432488adad341ba1"
+        "_rev": "5-26c366e92c03142bfe140944d1d296b6"
     },
     {
         "is_attachment": false,
         "metadata": true,
         "_id": "project-metadata-isrequest",
-        "_rev": "3-64c85566ac5d7817677646269912d110"
+        "_rev": "5-0c09dabe2dea6c9b912d4b5122851317"
     },
     {
         "is_attachment": false,
         "metadata": "Aarhus University",
         "_id": "project-metadata-lead_institution",
-        "_rev": "3-14a5f74c11fdf67e076c6c82dd878ab8"
+        "_rev": "5-c33aee98f4eb9e932867f36af6b09f1a"
     },
     {
         "is_attachment": false,
         "metadata":
         {},
         "_id": "project-metadata-meta",
-        "_rev": "3-f061ea60be26bc6fbd96b6127d178fd6"
+        "_rev": "5-28592ac6df3ba082d15817895f252cfd"
     },
     {
         "is_attachment": false,
         "metadata": "This notebooks supports the documentation of the current condition, access, and location of Cold War and earlier civil defenses in Aarhus municipality",
         "_id": "project-metadata-pre_description",
-        "_rev": "3-0242264065f46f152419ce087334308f"
+        "_rev": "5-6cd1ec94ed097d5a3c0caef329b206a7"
     },
     {
         "is_attachment": false,
         "metadata": "Adela Sobotkova, Rosanna Farbøl",
         "_id": "project-metadata-project_lead",
-        "_rev": "3-ebcc59237d6be61eabbaf8508ed59f23"
+        "_rev": "5-41fdf5fcc631d7f4c3c6fc11d2555502"
     },
     {
         "is_attachment": false,
         "metadata": "New",
         "_id": "project-metadata-project_status",
-        "_rev": "3-02ccde79fc0c20bceb72b9e6b8bfdac3"
+        "_rev": "6-38fcbbacd11a87a7233f0dc1d89ce8d5"
     },
     {
         "is_attachment": false,
@@ -148,12 +148,12 @@
                 "FORM1SECTION1":
                 {
                     "sectionaccessinheritFORM1SECTION1": true,
-                    "sectiondescriptionFORM1SECTION1": "Here you can describe the shelter or other feature that you encounter. Please beware that if you encounter multiple shelters clustered together (each will have its own emergency exit), you need to record each one individually. You may suggest the subtype (number of iterations) in the Subtype field of the each shelter that is part of the cluster. That way, an individual shelters of type I will have subtype A, while clusters of two will results in two shelter records of type I and subtype B. Consult your supervisor if in doubt."
+                    "sectiondescriptionFORM1SECTION1": ""
                 },
                 "FORM1SECTION2":
                 {
                     "sectionaccessinheritFORM1SECTION2": true,
-                    "sectiondescriptionFORM1SECTION2": "Describe here the elements of the shelter, including the emergency exit on top, the entryway and other associated features."
+                    "sectiondescriptionFORM1SECTION2": ""
                 }
             },
             "meta":
@@ -190,7 +190,7 @@
             []
         },
         "_id": "project-metadata-projectvalue",
-        "_rev": "3-d36ccd41e8d48a7fd4e0b7ca06ec8010"
+        "_rev": "5-d263344d092a84e3b772076b9da0b6c5"
     },
     {
         "is_attachment": false,
@@ -199,16 +199,16 @@
             "FORM1SECTION1":
             {
                 "sectionaccessinheritFORM1SECTION1": true,
-                "sectiondescriptionFORM1SECTION1": "Here you can describe the shelter or other feature that you encounter. Please beware that if you encounter multiple shelters clustered together (each will have its own emergency exit), you need to record each one individually. You may suggest the subtype (number of iterations) in the Subtype field of the each shelter that is part of the cluster. That way, an individual shelters of type I will have subtype A, while clusters of two will results in two shelter records of type I and subtype B. Consult your supervisor if in doubt."
+                "sectiondescriptionFORM1SECTION1": ""
             },
             "FORM1SECTION2":
             {
                 "sectionaccessinheritFORM1SECTION2": true,
-                "sectiondescriptionFORM1SECTION2": "Describe here the elements of the shelter, including the emergency exit on top, the entryway and other associated features."
+                "sectiondescriptionFORM1SECTION2": ""
             }
         },
         "_id": "project-metadata-sections",
-        "_rev": "3-8a62e220fee3fb4e1791d61a1d4514f2"
+        "_rev": "6-a303d4f490f9999f6f0498f1ae571750"
     },
     {
         "fields":
@@ -454,7 +454,7 @@
                 "component-parameters":
                 {
                     "fullWidth": true,
-                    "helperText": "This attribute is relevant only to shelters and is not mandatory. Shelter subtype letters refer to the number of times the shelter design you recorded above occurs in one location. ",
+                    "helperText": "This attribute is relevant only to shelters. Shelter subtype letters refer to how many times the shelter type/design iterates in one location. Each individual iteration needs own record. That way, an individual shelter of type I will have one record and subtype \"Single iteration\", while a cluster of two type I shelters will results in two shelter records of type I and subtype A. Consult your supervisor if in doubt.",
                     "variant": "outlined",
                     "required": false,
                     "select": true,
@@ -467,28 +467,36 @@
                         "options":
                         [
                             {
-                                "value": "NA",
-                                "label": "NA"
+                                "value": "Other",
+                                "label": "Other"
                             },
                             {
-                                "value": "D",
-                                "label": "D"
-                            },
-                            {
-                                "value": "C",
-                                "label": "C"
-                            },
-                            {
-                                "value": "B",
-                                "label": "B"
+                                "value": "Single iteration",
+                                "label": "Single iteration"
                             },
                             {
                                 "value": "A",
                                 "label": "A"
                             },
                             {
-                                "value": "Other",
-                                "label": "Other"
+                                "value": "B",
+                                "label": "B"
+                            },
+                            {
+                                "value": "C",
+                                "label": "C"
+                            },
+                            {
+                                "value": "D",
+                                "label": "D"
+                            },
+                            {
+                                "value": "NA",
+                                "label": "NA"
+                            },
+                            {
+                                "value": "",
+                                "label": ""
                             }
                         ]
                     },
@@ -534,7 +542,8 @@
                     "helperText": "Take a photo of the entire extent of the feature with a scale within. ",
                     "variant": "outlined",
                     "label": "Overview Photo",
-                    "required": true
+                    "required": true,
+                    "helpertext": "The photo should capture the entirety of the feature and its nearest context. It is best taken from a distance"
                 },
                 "validationSchema":
                 [
@@ -1371,76 +1380,80 @@
                         "options":
                         [
                             {
-                                "value": "NNW",
-                                "label": "NNW"
-                            },
-                            {
-                                "value": "NW",
-                                "label": "NW"
-                            },
-                            {
-                                "value": "WNW",
-                                "label": "WNW"
-                            },
-                            {
-                                "value": "W",
-                                "label": "W"
-                            },
-                            {
-                                "value": " WSW",
-                                "label": " WSW"
-                            },
-                            {
-                                "value": " SW",
-                                "label": " SW"
-                            },
-                            {
-                                "value": "SSW",
-                                "label": "SSW"
-                            },
-                            {
-                                "value": "S",
-                                "label": "S"
-                            },
-                            {
-                                "value": " SSE",
-                                "label": " SSE"
-                            },
-                            {
-                                "value": " SE",
-                                "label": " SE"
-                            },
-                            {
-                                "value": " ESE",
-                                "label": " ESE"
-                            },
-                            {
-                                "value": " E",
-                                "label": " E"
-                            },
-                            {
-                                "value": " ENE",
-                                "label": " ENE"
-                            },
-                            {
-                                "value": " NE",
-                                "label": " NE"
-                            },
-                            {
-                                "value": " NNE",
-                                "label": " NNE"
-                            },
-                            {
-                                "value": "N",
-                                "label": "N"
+                                "value": " OTHER",
+                                "label": " OTHER"
                             },
                             {
                                 "value": " NOT AVAILABLE",
                                 "label": " NOT AVAILABLE"
                             },
                             {
-                                "value": " OTHER",
-                                "label": " OTHER"
+                                "value": "N",
+                                "label": "N"
+                            },
+                            {
+                                "value": " NNE",
+                                "label": " NNE"
+                            },
+                            {
+                                "value": " NE",
+                                "label": " NE"
+                            },
+                            {
+                                "value": " ENE",
+                                "label": " ENE"
+                            },
+                            {
+                                "value": " E",
+                                "label": " E"
+                            },
+                            {
+                                "value": " ESE",
+                                "label": " ESE"
+                            },
+                            {
+                                "value": " SE",
+                                "label": " SE"
+                            },
+                            {
+                                "value": " SSE",
+                                "label": " SSE"
+                            },
+                            {
+                                "value": "S",
+                                "label": "S"
+                            },
+                            {
+                                "value": "SSW",
+                                "label": "SSW"
+                            },
+                            {
+                                "value": " SW",
+                                "label": " SW"
+                            },
+                            {
+                                "value": " WSW",
+                                "label": " WSW"
+                            },
+                            {
+                                "value": "W",
+                                "label": "W"
+                            },
+                            {
+                                "value": "WNW",
+                                "label": "WNW"
+                            },
+                            {
+                                "value": "NW",
+                                "label": "NW"
+                            },
+                            {
+                                "value": "NNW",
+                                "label": "NNW"
+                            },
+                            {
+                                "value": "",
+                                "label": ""
                             }
                         ]
                     },
@@ -1509,47 +1522,6 @@
                     ]
                 ],
                 "initialValue": "",
-                "access":
-                [
-                    "admin"
-                ],
-                "meta":
-                {
-                    "annotation_label": "annotation",
-                    "annotation": true,
-                    "uncertainty":
-                    {
-                        "include": true,
-                        "label": "uncertainty"
-                    }
-                }
-            },
-            "newfield7700f340":
-            {
-                "component-namespace": "mapping-plugin",
-                "component-name": "MapFormField",
-                "type-returned": "faims-core::JSON",
-                "component-parameters":
-                {
-                    "name": "newfield7700f340",
-                    "id": "newfield7700f340",
-                    "variant": "outlined",
-                    "required": false,
-                    "featureType": "Point",
-                    "zoom": "",
-                    "label": "",
-                    "FormLabelProps":
-                    {
-                        "children": "Entryway Location"
-                    }
-                },
-                "validationSchema":
-                [
-                    [
-                        "yup.string"
-                    ]
-                ],
-                "initialValue": "1",
                 "access":
                 [
                     "admin"
@@ -1659,7 +1631,7 @@
                 "component-parameters":
                 {
                     "fullWidth": true,
-                    "helperText": "Comment on feature preservation and, if the feature is not a shelter, describe its characteristics, such as shape, external markers and dimensions here.",
+                    "helperText": "Comment on feature location (if hard to find) , preservation and, if the feature is not a shelter, describe its characteristics, such as shape, external markers and dimensions here.",
                     "variant": "outlined",
                     "required": false,
                     "InputProps":
@@ -1707,7 +1679,7 @@
                 "component-parameters":
                 {
                     "fullWidth": true,
-                    "helperText": "What led you to the shelter or feature?",
+                    "helperText": "What led you to the shelter or feature? If the map, please indicate pin color in the Annotation",
                     "variant": "outlined",
                     "required": false,
                     "select": true,
@@ -2078,6 +2050,243 @@
                         "label": "uncertainty"
                     }
                 }
+            },
+            "newfield595f9cf5":
+            {
+                "component-namespace": "faims-custom",
+                "component-name": "Select",
+                "type-returned": "faims-core::String",
+                "component-parameters":
+                {
+                    "fullWidth": true,
+                    "helperText": "Which way do you face when taking the overview photo?",
+                    "variant": "outlined",
+                    "required": false,
+                    "select": true,
+                    "InputProps":
+                    {},
+                    "SelectProps":
+                    {},
+                    "ElementProps":
+                    {
+                        "options":
+                        [
+                            {
+                                "value": "OTHER",
+                                "label": "OTHER"
+                            },
+                            {
+                                "value": " NOT AVAILABLE",
+                                "label": " NOT AVAILABLE"
+                            },
+                            {
+                                "value": "N",
+                                "label": "N"
+                            },
+                            {
+                                "value": " NNE",
+                                "label": " NNE"
+                            },
+                            {
+                                "value": " NE",
+                                "label": " NE"
+                            },
+                            {
+                                "value": " ENE",
+                                "label": " ENE"
+                            },
+                            {
+                                "value": " E",
+                                "label": " E"
+                            },
+                            {
+                                "value": " ESE",
+                                "label": " ESE"
+                            },
+                            {
+                                "value": " SE",
+                                "label": " SE"
+                            },
+                            {
+                                "value": " SSE",
+                                "label": " SSE"
+                            },
+                            {
+                                "value": "S",
+                                "label": "S"
+                            },
+                            {
+                                "value": "SSW",
+                                "label": "SSW"
+                            },
+                            {
+                                "value": " SW",
+                                "label": " SW"
+                            },
+                            {
+                                "value": " WSW",
+                                "label": " WSW"
+                            },
+                            {
+                                "value": "W",
+                                "label": "W"
+                            },
+                            {
+                                "value": "WNW",
+                                "label": "WNW"
+                            },
+                            {
+                                "value": "NW",
+                                "label": "NW"
+                            },
+                            {
+                                "value": "NNW",
+                                "label": "NNW"
+                            },
+                            {
+                                "value": "",
+                                "label": ""
+                            }
+                        ]
+                    },
+                    "InputLabelProps":
+                    {
+                        "label": "Facing photo direction"
+                    },
+                    "id": "newfield595f9cf5",
+                    "name": "newfield595f9cf5"
+                },
+                "validationSchema":
+                [
+                    [
+                        "yup.string"
+                    ]
+                ],
+                "initialValue": "",
+                "access":
+                [
+                    "admin"
+                ],
+                "meta":
+                {
+                    "annotation_label": "annotation",
+                    "annotation": true,
+                    "uncertainty":
+                    {
+                        "include": true,
+                        "label": "uncertainty"
+                    }
+                }
+            },
+            "newfieldc0f0efb4":
+            {
+                "component-namespace": "faims-custom",
+                "component-name": "Select",
+                "type-returned": "faims-core::String",
+                "component-parameters":
+                {
+                    "fullWidth": true,
+                    "helperText": "Could you locate the shelter/feature or is it undetectable in the area? Provide comments in Feature Note",
+                    "variant": "outlined",
+                    "required": false,
+                    "select": true,
+                    "InputProps":
+                    {},
+                    "SelectProps":
+                    {},
+                    "ElementProps":
+                    {
+                        "options":
+                        [
+                            {
+                                "value": "Located and accessible",
+                                "label": "Located and accessible"
+                            },
+                            {
+                                "value": " Located and inaccessible",
+                                "label": " Located and inaccessible"
+                            },
+                            {
+                                "value": " Location indeterminate",
+                                "label": " Location indeterminate"
+                            },
+                            {
+                                "value": " Other",
+                                "label": " Other"
+                            },
+                            {
+                                "value": " NA",
+                                "label": " NA"
+                            }
+                        ]
+                    },
+                    "InputLabelProps":
+                    {
+                        "label": "Feature discovery status"
+                    },
+                    "id": "newfieldc0f0efb4",
+                    "name": "newfieldc0f0efb4"
+                },
+                "validationSchema":
+                [
+                    [
+                        "yup.string"
+                    ]
+                ],
+                "initialValue": "",
+                "access":
+                [
+                    "admin"
+                ],
+                "meta":
+                {
+                    "annotation_label": "annotation",
+                    "annotation": true,
+                    "uncertainty":
+                    {
+                        "include": true,
+                        "label": "uncertainty"
+                    }
+                }
+            },
+            "newfieldecc891cb":
+            {
+                "component-namespace": "faims-custom",
+                "component-name": "TakePoint",
+                "type-returned": "faims-pos::Location",
+                "component-parameters":
+                {
+                    "fullWidth": true,
+                    "name": "newfieldecc891cb",
+                    "id": "newfieldecc891cb",
+                    "helperText": "Take a point standing at the base of the entryway",
+                    "variant": "outlined",
+                    "label": "Entryway GPS point"
+                },
+                "validationSchema":
+                [
+                    [
+                        "yup.object"
+                    ],
+                    [
+                        "yup.nullable"
+                    ]
+                ],
+                "initialValue": null,
+                "access":
+                [
+                    "admin"
+                ],
+                "meta":
+                {
+                    "annotation_label": "annotation",
+                    "annotation": true,
+                    "uncertainty":
+                    {
+                        "include": true,
+                        "label": "uncertainty"
+                    }
+                }
             }
         },
         "fviews":
@@ -2090,6 +2299,9 @@
                     "newfield20c81386",
                     "hridFORM1",
                     "newfieldc2a82721",
+                    "newfieldc0f0efb4",
+                    "newfield4f5f1028",
+                    "newfield595f9cf5",
                     "newfieldbecf0b36",
                     "newfield0df58223",
                     "newfielda7049f6e",
@@ -2097,7 +2309,6 @@
                     "newfieldfc1bcefa",
                     "newfieldb99a2c02",
                     "newfielde350da06",
-                    "newfield4f5f1028",
                     "newfieldc5fb419b"
                 ],
                 "uidesign": "form",
@@ -2112,16 +2323,16 @@
                     "newfield5a8613e3",
                     "newfield86980a68",
                     "newfieldd30b48f8",
-                    "newfield6936dfca",
-                    "newfield7700f340",
+                    "newfieldecc891cb",
                     "newfield91e7193a",
+                    "newfield6936dfca",
                     "newfielddce317ea",
                     "newfieldaca62901",
                     "newfield6407e68f",
-                    "newfield0452bda3",
+                    "newfield9f1d67e1",
                     "newfield4c30dcff",
                     "newfield57c628b9",
-                    "newfield9f1d67e1",
+                    "newfield0452bda3",
                     "newfield0358058e",
                     "newfield705de96c",
                     "newfield9c8e204d",
@@ -2148,6 +2359,6 @@
             "FORM1"
         ],
         "_id": "ui-specification",
-        "_rev": "3-080475e1c0427803a87c236ddde0d792"
+        "_rev": "6-9989b1b2810769750f8a4e443e350480"
     }
 ]
