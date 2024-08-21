@@ -6,44 +6,16 @@
       "moderator",
       "team"
     ],
-    "forms": {
-      "FORM1": {
-        "submitActionFORM1": "Save and New",
-        "annotationFORM1": true,
-        "uncertaintyFORM1": true,
-        "formaccessinheritFORM1": false,
-        "visibleFORM1": true
-      }
-    },
-    "sections": {},
+    "forms": {},
     "meta": {},
-    "access": {
-      "accessFORM1": [
-        "admin",
-        "moderator",
-        "team"
-      ],
-      "accessFORM1SECTION1": [
-        "admin",
-        "moderator",
-        "team"
-      ],
-      "accessFORM1SECTION2": [
-        "admin",
-        "moderator",
-        "team"
-      ]
-    },
-    "ispublic": false,
-    "isrequest": true,
-    "behavious": {},
-    "project_lead": "Adela Sobotkova, Rosanna Farb\u00f8l",
+    "access": {},
+    "project_lead": "Adela Sobotkova, Rosanna Farbøl",
     "lead_institution": "Aarhus University",
     "pre_description": "This notebooks supports the documentation of the current condition, access, and location of Cold War and earlier civil defenses in Aarhus municipality",
     "filenames": [],
     "notebook_version": "1.0",
     "schema_version": "1.0",
-    "name": "Shelters"
+    "name": "Aarhus Shelters"
   },
   "ui-specification": {
     "fields": {
@@ -167,14 +139,14 @@
           }
         }
       },
-      "hridFORM1": {
+      "hridShelter": {
         "component-namespace": "faims-custom",
         "component-name": "TemplatedStringField",
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "name": "hridFORM1",
-          "id": "hridFORM1",
+          "name": "hridShelter",
+          "id": "hridShelter",
           "helperText": "Human Readable ID",
           "variant": "outlined",
           "required": true,
@@ -223,7 +195,7 @@
           "variant": "outlined",
           "required": true,
           "num_digits": 5,
-          "form_id": "FORM1SECTION1",
+          "form_id": "General",
           "label": "ID"
         },
         "validationSchema": [
@@ -1214,38 +1186,6 @@
           }
         }
       },
-      "html-text": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "",
-          "variant": "outlined",
-          "label": "",
-          "variant_style": "h2",
-          "html_tag": "<h2>Civil Defence Features</h2><p>A number of different civil defence features can be found around Aarhus, from emergency hospital, watch posts to civilian shelters of different design. This form is designed primarily for shelters. If a feature is a shelter, then please select an appropriate type as best as you can surmise from the remains visible on the surface. If the feature is something else (depo, or other), select Other and describe in the Annotation, please. </p><div><img style=\"width:100%\" src=\"https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-1.jpg\"/></div>",
-          "id": "html-text",
-          "name": "html-text"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
       "feature-note": {
         "component-namespace": "formik-material-ui",
         "component-name": "TextField",
@@ -1348,38 +1288,6 @@
           }
         }
       },
-      "html-text-2": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "This is sub Title",
-          "variant": "outlined",
-          "label": "Interior",
-          "variant_style": "h5",
-          "html_tag": "",
-          "id": "html-text-2",
-          "name": "html-text-2"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
       "html-text-3": {
         "component-namespace": "faims-custom",
         "component-name": "RandomStyle",
@@ -1444,38 +1352,6 @@
           }
         }
       },
-      "html-text-5": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "The entrance to a shelter is usually through stairs down a gate, often covered by concrete slabs, but sometimes also doorways or other.",
-          "variant": "outlined",
-          "label": "Entryway",
-          "variant_style": "h5",
-          "html_tag": "",
-          "id": "html-text-5",
-          "name": "html-text-5"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
       "html-text-6": {
         "component-namespace": "faims-custom",
         "component-name": "RandomStyle",
@@ -1489,37 +1365,6 @@
           "html_tag": "",
           "id": "html-text-6",
           "name": "html-text-6"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "html-text-7": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "",
-          "variant": "outlined",
-          "label": "",
-          "html_tag": "<h2>Type/Subtype Illustration</h2><div><img style=\"width:100%\" src=\"https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-2_final.jpg\"/></div>",
-          "id": "html-text-7",
-          "name": "html-text-7"
         },
         "validationSchema": [
           [
@@ -1877,21 +1722,93 @@
             "label": "uncertainty"
           }
         }
+      },
+      "DescriptiveText": {
+        "component-namespace": "faims-custom",
+        "component-name": "RichText",
+        "type-returned": "faims-core::String",
+        "component-parameters": {
+          "label": "DescriptiveText",
+          "name": "DescriptiveText",
+          "content": "## Civil Defence Features\n\nA number of different civil defence features can be found around Aarhus, from emergency hospital, watch posts to civilian shelters of different design. This form is designed primarily for shelters. If a feature is a shelter, then please select an appropriate type as best as you can surmise from the remains visible on the surface. If the feature is something else (depo, or other), select Other and describe in the Annotation, please.\n\n![Example shelter](https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-1.jpg)"
+        },
+        "meta": {
+          "annotation": true,
+          "annotation_label": "annotation",
+          "uncertainty": {
+            "include": true,
+            "label": "uncertainty"
+          }
+        }
+      },
+      "SubtypeText": {
+        "component-namespace": "faims-custom",
+        "component-name": "RichText",
+        "type-returned": "faims-core::String",
+        "component-parameters": {
+          "label": "SubtypeText",
+          "name": "SubtypeText",
+          "content": "## Type/Subtype Illustration\n\n![](https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-2_final.jpg)"
+        },
+        "meta": {
+          "annotation": true,
+          "annotation_label": "annotation",
+          "uncertainty": {
+            "include": true,
+            "label": "uncertainty"
+          }
+        }
+      },
+      "EntryWayText": {
+        "component-namespace": "faims-custom",
+        "component-name": "RichText",
+        "type-returned": "faims-core::String",
+        "component-parameters": {
+          "label": "EntryWayText",
+          "name": "EntryWayText",
+          "content": "## Entryway\n\nThe entrance to a shelter is usually through stairs down a gate, often covered by concrete slabs, but sometimes also doorways or other."
+        },
+        "meta": {
+          "annotation": true,
+          "annotation_label": "annotation",
+          "uncertainty": {
+            "include": true,
+            "label": "uncertainty"
+          }
+        }
+      },
+      "InteriorSubtitle": {
+        "component-namespace": "faims-custom",
+        "component-name": "RichText",
+        "type-returned": "faims-core::String",
+        "component-parameters": {
+          "label": "InteriorSubtitle",
+          "name": "InteriorSubtitle",
+          "content": "## Interior"
+        },
+        "meta": {
+          "annotation": true,
+          "annotation_label": "annotation",
+          "uncertainty": {
+            "include": true,
+            "label": "uncertainty"
+          }
+        }
       }
     },
     "fviews": {
-      "FORM1SECTION1": {
+      "General": {
         "fields": [
           "id",
-          "html-text",
-          "hridFORM1",
+          "DescriptiveText",
+          "hridShelter",
           "author",
           "feature-source",
           "feature-discovery-status",
           "overview-photo",
           "facing-photo-direction",
           "shelter-type",
-          "html-text-7",
+          "SubtypeText",
           "belongs-to-shelter-subtype",
           "locale-description",
           "take-point-from-gps",
@@ -1903,10 +1820,10 @@
         "label": "General",
         "description": ""
       },
-      "FORM1SECTION2": {
+      "Element": {
         "fields": [
           "html-text-4",
-          "html-text-5",
+          "EntryWayText",
           "entryway-type",
           "accessiblity-of-shelter-during-visit",
           "entryway-direction",
@@ -1920,7 +1837,7 @@
           "emergency-exit-gps-point",
           "emergency-exit-photo",
           "notes-on-emergency-exit",
-          "html-text-2",
+          "InteriorSubtitle",
           "interior-description",
           "html-text-6",
           "comments-and-recommendations"
@@ -1931,16 +1848,16 @@
       }
     },
     "viewsets": {
-      "FORM1": {
+      "Shelter": {
         "views": [
-          "FORM1SECTION1",
-          "FORM1SECTION2"
+          "General",
+          "Element"
         ],
         "label": "Shelter"
       }
     },
     "visible_types": [
-      "FORM1"
+      "Shelter"
     ]
   }
 }
