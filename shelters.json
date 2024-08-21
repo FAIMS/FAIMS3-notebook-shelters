@@ -1320,38 +1320,6 @@
           }
         }
       },
-      "html-text-4": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "Shelters have entryways, vents/emergency exists and other elements, which are visible unless the shelter has been buried or demolished. Please indicate the shape and location of these elements",
-          "variant": "outlined",
-          "label": "Shelter elements",
-          "variant_style": "h2",
-          "html_tag": "",
-          "id": "html-text-4",
-          "name": "html-text-4"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
       "html-text-6": {
         "component-namespace": "faims-custom",
         "component-name": "RandomStyle",
@@ -1766,7 +1734,7 @@
         "component-parameters": {
           "label": "EntryWayText",
           "name": "EntryWayText",
-          "content": "## Entryway\n\nThe entrance to a shelter is usually through stairs down a gate, often covered by concrete slabs, but sometimes also doorways or other."
+          "content": "## Shelter Elements\n\nShelters have entryways, vents/emergency exists and other elements, which are visible unless the shelter has been buried or demolished. Please indicate the shape and location of these elements\n\n### Entryway\n\nThe entrance to a shelter is usually through stairs down a gate, often covered by concrete slabs, but sometimes also doorways or other."
         },
         "meta": {
           "annotation": true,
@@ -1784,7 +1752,7 @@
         "component-parameters": {
           "label": "InteriorSubtitle",
           "name": "InteriorSubtitle",
-          "content": "## Interior"
+          "content": "### Interior"
         },
         "meta": {
           "annotation": true,
@@ -1822,7 +1790,6 @@
       },
       "Element": {
         "fields": [
-          "html-text-4",
           "EntryWayText",
           "entryway-type",
           "accessiblity-of-shelter-during-visit",
