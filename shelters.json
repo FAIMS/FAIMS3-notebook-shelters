@@ -1154,7 +1154,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Helper Text",
+          "helperText": "Provide any other suggestions of what might need recording",
           "variant": "outlined",
           "required": false,
           "InputProps": {
@@ -1184,7 +1184,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "feature-note": {
         "component-namespace": "formik-material-ui",
@@ -1269,70 +1272,6 @@
           },
           "id": "feature-source",
           "name": "feature-source"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "html-text-3": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "Emergency exit is a chimney-like feature on top of most shelters. It can be either square or round in plan and may have little vents/windows in it. ",
-          "variant": "outlined",
-          "label": "Emergency Exit",
-          "variant_style": "h5",
-          "html_tag": "",
-          "id": "html-text-3",
-          "name": "html-text-3"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "html-text-6": {
-        "component-namespace": "faims-custom",
-        "component-name": "RandomStyle",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "Provide any other suggestions of what might need recording",
-          "variant": "outlined",
-          "label": "Final comments",
-          "variant_style": "h5",
-          "html_tag": "",
-          "id": "html-text-6",
-          "name": "html-text-6"
         },
         "validationSchema": [
           [
@@ -1762,6 +1701,24 @@
             "label": "uncertainty"
           }
         }
+      },
+      "EmergencyExitSubtitle": {
+        "component-namespace": "faims-custom",
+        "component-name": "RichText",
+        "type-returned": "faims-core::String",
+        "component-parameters": {
+          "label": "EmergencyExitSubtitle",
+          "name": "EmergencyExitSubtitle",
+          "content": "### Emergency Exit&#x20;\n\nEmergency exit is a chimney-like feature on top of most shelters. It can be either square or round in plan and may have little vents/windows in it.&#x20;"
+        },
+        "meta": {
+          "annotation": true,
+          "annotation_label": "annotation",
+          "uncertainty": {
+            "include": true,
+            "label": "uncertainty"
+          }
+        }
       }
     },
     "fviews": {
@@ -1797,7 +1754,7 @@
           "entryway-gps-point",
           "entryway-photo",
           "comments-on-entryway",
-          "html-text-3",
+          "EmergencyExitSubtitle",
           "emergency-exit-shape",
           "emergency-exit-location",
           "distance-from-swan-neck-to-emergency-exit-m",
@@ -1806,7 +1763,6 @@
           "notes-on-emergency-exit",
           "InteriorSubtitle",
           "interior-description",
-          "html-text-6",
           "comments-and-recommendations"
         ],
         "uidesign": "form",
