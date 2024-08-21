@@ -15,7 +15,7 @@
     "filenames": [],
     "notebook_version": "1.0",
     "schema_version": "1.0",
-    "name": "Aarhus Shelters"
+    "name": "Aarhus Shelters 2024"
   },
   "ui-specification": {
     "fields": {
@@ -25,7 +25,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Shelter is the most common type of civil defense struture in Aarhus.  Types refer to the plan of the shelter below ground. Indicate which is the likely type if you can make it out during the visit. Use the certainty slider in case of uncertainty! ",
+          "helperText": "Public shelter BTG (betondaekninggrave)  is the most common type of civil defense struture in Aarhus.  Shelter Types refer to the plan of the shelter below ground, of which Aarhus has three main types: III, VI and VI (single, A and B subtypes). Indicate which is the likely type if you can make it out during the visit. Use the certainty slider in case of uncertainty!  If you select other, it means either the shelter is not a BTG but a SR (Sikringsrum) or CPS (combined public shelter) or something else entirely.  ",
           "variant": "outlined",
           "required": true,
           "select": true,
@@ -68,7 +68,7 @@
             ]
           },
           "InputLabelProps": {
-            "label": "Shelter Type"
+            "label": "Shelter type"
           },
           "id": "shelter-type",
           "name": "shelter-type"
@@ -92,7 +92,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "feature-id": {
         "component-namespace": "faims-custom",
@@ -150,13 +153,13 @@
           "helperText": "Human Readable ID",
           "variant": "outlined",
           "required": true,
-          "template": "{{id}}-{{shelter-type}}",
+          "template": "{{id}}-{{shelter-type}}-{{author}}",
           "InputProps": {
             "type": "text",
             "readOnly": true
           },
           "InputLabelProps": {
-            "label": "Feature ID"
+            "label": "hridShelter"
           },
           "hrid": true,
           "linked": "feature-id",
@@ -194,9 +197,9 @@
           "id": "id",
           "variant": "outlined",
           "required": true,
-          "num_digits": 5,
+          "num_digits": 4,
           "form_id": "General",
-          "label": "ID"
+          "label": "Feature ID"
         },
         "validationSchema": [
           [
@@ -268,7 +271,7 @@
             ]
           },
           "InputLabelProps": {
-            "label": "Belongs to shelter subtype"
+            "label": "Shelter subtype"
           },
           "id": "belongs-to-shelter-subtype",
           "name": "belongs-to-shelter-subtype"
@@ -289,7 +292,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "overview-photo": {
         "component-namespace": "faims-custom",
@@ -301,7 +307,7 @@
           "id": "overview-photo",
           "helperText": "Take a photo of the entire extent of the feature with a scale within. ",
           "variant": "outlined",
-          "label": "Overview Photo",
+          "label": "Overview photo",
           "required": true,
           "helpertext": "The photo should capture the entirety of the feature and its nearest context. It is best taken from a distance"
         },
@@ -324,7 +330,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "take-point-from-gps": {
         "component-namespace": "faims-custom",
@@ -334,9 +343,9 @@
           "fullWidth": true,
           "name": "take-point-from-gps",
           "id": "take-point-from-gps",
-          "helperText": "Take a point while standing on top of the shelter (if inaccessible make a note of where you stand in the annotation)",
+          "helperText": "Take a point while standing next to shelter entrance as if you were going to enter. This is necessary as we will be modelling evacuation and need to know where the entry is to model accessibility. (If entrance is inaccessible because of tree or similar, make a note of where you captured GPS in the annotation)",
           "variant": "outlined",
-          "label": "Take point from GPS",
+          "label": "Entrance coordinates",
           "required": true
         },
         "validationSchema": [
@@ -361,7 +370,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "locale-description": {
         "component-namespace": "formik-material-ui",
@@ -369,7 +381,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Describe the environs of the shelter or feature, and specify its address so that others can find it easily after you.",
+          "helperText": "Describe the environs of the shelter or feature, and specify its address so that others can find it easily after you.\nList here also the number used for this location in the digitized archive records (\"Bdnr\") or in BBR register or other source data (. You should see it associated with a given address or note it in the map. If there is no number, please mark the date and name of the legacy map sheet, and describe in. ",
           "variant": "outlined",
           "required": false,
           "InputProps": {
@@ -399,7 +411,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "landuse-on-top": {
         "component-namespace": "faims-custom",
@@ -407,7 +422,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Describe what covers the surface of the shelter. Is it overgrown with grass, covered with shrubs, or converted into a playground or ashpalted area?",
+          "helperText": "Describe what covers the surface of the shelter. Is it overgrown with grass, covered with shrubs, or converted into a playground or asphalted area?",
           "variant": "outlined",
           "required": true,
           "select": true,
@@ -478,7 +493,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "landuse-around": {
         "component-namespace": "faims-custom",
@@ -486,7 +504,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Describe briefly the setting of the shelter. If multiple different kinds of landuse co-occur, choose the majority and then add the rest in annotation",
+          "helperText": "Describe briefly the setting of the shelter. What is the landuse within 50m radius of the shelter? Is it in a grassy area between residential blocks or is it under the street of the old town? If multiple different kinds of landuse co-occur, choose the majority and then add the rest in annotation",
           "variant": "outlined",
           "required": true,
           "select": true,
@@ -553,7 +571,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "emergency-exit-shape": {
         "component-namespace": "faims-custom",
@@ -561,7 +582,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Indicate the shape of emergency exit. If not detectable, select NA.",
+          "helperText": "Indicate the shape of emergency exit as it is diagnostic of the construction date: square exit is common in WWII shelters, while round exist turret is typical of Cold-war shelters IV, V and VI. If not detectable, select NA.",
           "variant": "outlined",
           "required": true,
           "select": true,
@@ -612,7 +633,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "emergency-exit-location": {
         "component-namespace": "faims-custom",
@@ -620,7 +644,7 @@
         "type-returned": "faims-core::String",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "The specific location of an emergency exit will vary with shelter type. A round shelter will have this exit on the top center, while a square shelter will have it off center, to the side or a corner. Please indicate its location relative to shelter plan and use Annotation or pictures for more detail",
+          "helperText": "The specific location of an emergency exit will vary with shelter type. Check Tommy's instruction cards. A round shelter will have this exit on the top center, while a square shelter will have it off center, to the side or a corner. Please indicate its location relative to shelter plan and use Annotation or pictures for more detail. Make suggestions for a better typology!",
           "variant": "outlined",
           "required": true,
           "select": true,
@@ -675,7 +699,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "notes-on-emergency-exit": {
         "component-namespace": "formik-material-ui",
@@ -809,7 +836,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": true,
+        "displayParent": false
       },
       "accessiblity-of-shelter-during-visit": {
         "component-namespace": "faims-custom",
@@ -880,7 +910,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": true,
+        "displayParent": false
       },
       "entryway-photo": {
         "component-namespace": "faims-custom",
@@ -929,7 +962,7 @@
           },
           "SelectProps": {},
           "InputLabelProps": {
-            "label": "Comments on entryway"
+            "label": "Comments on entryway and access"
           },
           "FormHelperTextProps": {},
           "id": "comments-on-entryway",
@@ -951,7 +984,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "distance-from-swan-neck-to-emergency-exit-m": {
         "component-namespace": "formik-material-ui",
@@ -959,7 +995,7 @@
         "type-returned": "faims-core::Integer",
         "component-parameters": {
           "fullWidth": true,
-          "helperText": "Can you find a turned tube \"swan neck ventilation\" near the foot of the shelter? If so, measure its distance to the emergency exit in METERS",
+          "helperText": "Can you find a down-turned ventilation tube near the foot of the shelter? If so, measure its distance to the emergency exit in METERS",
           "variant": "outlined",
           "required": false,
           "InputProps": {
@@ -989,7 +1025,10 @@
             "include": true,
             "label": "outside the limits of measurement"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "entryway-direction": {
         "component-namespace": "faims-custom",
@@ -1084,7 +1123,7 @@
             ]
           },
           "InputLabelProps": {
-            "label": "Entryway direction"
+            "label": "Entryway faces direction"
           },
           "id": "entryway-direction",
           "name": "entryway-direction"
@@ -1108,7 +1147,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": false,
+        "displayParent": false
       },
       "interior-description": {
         "component-namespace": "formik-material-ui",
@@ -1242,28 +1284,44 @@
           "ElementProps": {
             "options": [
               {
-                "value": "Informant",
-                "label": "Informant"
+                "label": "Informant",
+                "value": "Informant"
               },
               {
-                "value": "Serendipity",
-                "label": "Serendipity"
+                "label": "Serendipity",
+                "value": "Serendipity"
               },
               {
-                "value": "Rosannas list",
-                "label": "Rosannas list"
+                "label": "Rosannas list",
+                "value": "Rosannas list"
               },
               {
-                "value": "Map",
-                "label": "Map"
+                "label": "Map",
+                "value": "Map"
               },
               {
-                "value": "Other",
-                "label": "Other"
+                "label": "BBR list",
+                "value": "BBR list"
               },
               {
-                "value": " NA",
-                "label": " NA"
+                "label": "Archival data",
+                "value": "Archival data"
+              },
+              {
+                "label": "Tommy Cassoes data",
+                "value": "Tommy Cassoes data"
+              },
+              {
+                "label": "Andreas' list",
+                "value": "Andreas' list"
+              },
+              {
+                "label": "Other",
+                "value": "Other"
+              },
+              {
+                "label": "NA",
+                "value": "NA"
               }
             ]
           },
@@ -1289,7 +1347,10 @@
             "include": true,
             "label": "uncertainty"
           }
-        }
+        },
+        "condition": null,
+        "persistent": true,
+        "displayParent": false
       },
       "take-point": {
         "component-namespace": "faims-custom",
@@ -1302,248 +1363,6 @@
           "helperText": "Click to save current location",
           "variant": "outlined",
           "label": "Take point"
-        },
-        "validationSchema": [
-          [
-            "yup.object"
-          ],
-          [
-            "yup.nullable"
-          ]
-        ],
-        "initialValue": null,
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "emergency-exit-gps-point": {
-        "component-namespace": "faims-custom",
-        "component-name": "TakePoint",
-        "type-returned": "faims-pos::Location",
-        "component-parameters": {
-          "fullWidth": true,
-          "name": "emergency-exit-gps-point",
-          "id": "emergency-exit-gps-point",
-          "helperText": "Click to save current location",
-          "variant": "outlined",
-          "label": "Emergency Exit GPS Point"
-        },
-        "validationSchema": [
-          [
-            "yup.object"
-          ],
-          [
-            "yup.nullable"
-          ]
-        ],
-        "initialValue": null,
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "facing-photo-direction": {
-        "component-namespace": "faims-custom",
-        "component-name": "Select",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "Which way do you face when taking the overview photo?",
-          "variant": "outlined",
-          "required": false,
-          "select": true,
-          "InputProps": {},
-          "SelectProps": {},
-          "ElementProps": {
-            "options": [
-              {
-                "value": "OTHER",
-                "label": "OTHER"
-              },
-              {
-                "value": " NOT AVAILABLE",
-                "label": " NOT AVAILABLE"
-              },
-              {
-                "value": "N",
-                "label": "N"
-              },
-              {
-                "value": " NNE",
-                "label": " NNE"
-              },
-              {
-                "value": " NE",
-                "label": " NE"
-              },
-              {
-                "value": " ENE",
-                "label": " ENE"
-              },
-              {
-                "value": " E",
-                "label": " E"
-              },
-              {
-                "value": " ESE",
-                "label": " ESE"
-              },
-              {
-                "value": " SE",
-                "label": " SE"
-              },
-              {
-                "value": " SSE",
-                "label": " SSE"
-              },
-              {
-                "value": "S",
-                "label": "S"
-              },
-              {
-                "value": "SSW",
-                "label": "SSW"
-              },
-              {
-                "value": " SW",
-                "label": " SW"
-              },
-              {
-                "value": " WSW",
-                "label": " WSW"
-              },
-              {
-                "value": "W",
-                "label": "W"
-              },
-              {
-                "value": "WNW",
-                "label": "WNW"
-              },
-              {
-                "value": "NW",
-                "label": "NW"
-              },
-              {
-                "value": "NNW",
-                "label": "NNW"
-              },
-              {
-                "value": "",
-                "label": ""
-              }
-            ]
-          },
-          "InputLabelProps": {
-            "label": "Facing photo direction"
-          },
-          "id": "facing-photo-direction",
-          "name": "facing-photo-direction"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "feature-discovery-status": {
-        "component-namespace": "faims-custom",
-        "component-name": "Select",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "fullWidth": true,
-          "helperText": "Could you locate the shelter/feature or is it undetectable in the area? Provide comments in Feature Note",
-          "variant": "outlined",
-          "required": false,
-          "select": true,
-          "InputProps": {},
-          "SelectProps": {},
-          "ElementProps": {
-            "options": [
-              {
-                "value": "Located and accessible",
-                "label": "Located and accessible"
-              },
-              {
-                "value": " Located and inaccessible",
-                "label": " Located and inaccessible"
-              },
-              {
-                "value": " Location indeterminate",
-                "label": " Location indeterminate"
-              },
-              {
-                "value": " Other",
-                "label": " Other"
-              },
-              {
-                "value": " NA",
-                "label": " NA"
-              }
-            ]
-          },
-          "InputLabelProps": {
-            "label": "Feature discovery status"
-          },
-          "id": "feature-discovery-status",
-          "name": "feature-discovery-status"
-        },
-        "validationSchema": [
-          [
-            "yup.string"
-          ]
-        ],
-        "initialValue": "",
-        "access": [
-          "admin"
-        ],
-        "meta": {
-          "annotation_label": "annotation",
-          "annotation": true,
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
-      "entryway-gps-point": {
-        "component-namespace": "faims-custom",
-        "component-name": "TakePoint",
-        "type-returned": "faims-pos::Location",
-        "component-parameters": {
-          "fullWidth": true,
-          "name": "entryway-gps-point",
-          "id": "entryway-gps-point",
-          "helperText": "Take a point standing at the base of the entryway",
-          "variant": "outlined",
-          "label": "Entryway GPS point"
         },
         "validationSchema": [
           [
@@ -1630,24 +1449,6 @@
           }
         }
       },
-      "DescriptiveText": {
-        "component-namespace": "faims-custom",
-        "component-name": "RichText",
-        "type-returned": "faims-core::String",
-        "component-parameters": {
-          "label": "DescriptiveText",
-          "name": "DescriptiveText",
-          "content": "## Civil Defence Features\n\nA number of different civil defence features can be found around Aarhus, from emergency hospital, watch posts to civilian shelters of different design. This form is designed primarily for shelters. If a feature is a shelter, then please select an appropriate type as best as you can surmise from the remains visible on the surface. If the feature is something else (depo, or other), select Other and describe in the Annotation, please.\n\n![Example shelter](https://www.danskkoldkrigsforening.dk/wp-content/uploads/2020/07/D%C3%A6kningsgrav-1.jpg)"
-        },
-        "meta": {
-          "annotation": true,
-          "annotation_label": "annotation",
-          "uncertainty": {
-            "include": true,
-            "label": "uncertainty"
-          }
-        }
-      },
       "SubtypeText": {
         "component-namespace": "faims-custom",
         "component-name": "RichText",
@@ -1709,7 +1510,7 @@
         "component-parameters": {
           "label": "EmergencyExitSubtitle",
           "name": "EmergencyExitSubtitle",
-          "content": "### Emergency Exit&#x20;\n\nEmergency exit is a chimney-like feature on top of most shelters. It can be either square or round in plan and may have little vents/windows in it.&#x20;"
+          "content": "### Emergency Exit&#x20;\n\nEmergency exit is a chimney-like feature on top of most shelters. It can be either square or round in plan and may have little vents/windows in it. In its vicinity, a metal pipe often sticks out of the ground and bends down - this is the Swan-neck. &#x20;"
         },
         "meta": {
           "annotation": true,
@@ -1724,16 +1525,13 @@
     "fviews": {
       "General": {
         "fields": [
-          "id",
-          "DescriptiveText",
-          "hridShelter",
           "author",
+          "id",
+          "hridShelter",
           "feature-source",
-          "feature-discovery-status",
           "overview-photo",
-          "facing-photo-direction",
-          "shelter-type",
           "SubtypeText",
+          "shelter-type",
           "belongs-to-shelter-subtype",
           "locale-description",
           "take-point-from-gps",
@@ -1751,14 +1549,12 @@
           "entryway-type",
           "accessiblity-of-shelter-during-visit",
           "entryway-direction",
-          "entryway-gps-point",
           "entryway-photo",
           "comments-on-entryway",
           "EmergencyExitSubtitle",
           "emergency-exit-shape",
           "emergency-exit-location",
           "distance-from-swan-neck-to-emergency-exit-m",
-          "emergency-exit-gps-point",
           "emergency-exit-photo",
           "notes-on-emergency-exit",
           "InteriorSubtitle",
